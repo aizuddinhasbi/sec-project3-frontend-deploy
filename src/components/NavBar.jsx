@@ -1,9 +1,10 @@
 // src/components/NavBar.jsx
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import App from "../App.jsx";
 import "../styles/NavBar.css";
 
-const NavBar = ({ isAuth, setAuth }) => {
+function NavBar({ isAuth, setAuth }) {
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -32,6 +33,6 @@ const NavBar = ({ isAuth, setAuth }) => {
       </div>
     </nav>
   );
-};
+}
 
 export default NavBar;

@@ -5,7 +5,7 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/NavBar";
 
 const App = () => {
   const [isAuth, setAuth] = useState(false);
