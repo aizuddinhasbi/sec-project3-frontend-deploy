@@ -5,7 +5,7 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
-import NavBar from "./components/NavBar";
+import Navbar from "./components/NavBar";
 
 const App = () => {
   const [isAuth, setAuth] = useState(false);
@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <Router>
-      <NavBar setAuth={setAuth} isAuth={isAuth} />
+      <Navbar setAuth={setAuth} isAuth={isAuth} />
       <Routes>
         <Route path="/" element={<Home />} />
         {!isAuth ? (
